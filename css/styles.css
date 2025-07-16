@@ -1,27 +1,27 @@
 /* Variables CSS pour la palette de couleurs vertes naturelles */
 :root {
   /* Couleurs principales - Tons verts naturels */
-  --color-vert-principal: #2E7D32;
-  --color-vert-clair: #4CAF50;
-  --color-vert-fonce: #1B5E20;
-  --color-vert-sauge: #8BC34A;
-  --color-vert-tendre: #C8E6C9;
-  --color-vert-emeraude: #00695C;
-  
+  --color-vert-principal: #2e7d32;
+  --color-vert-clair: #4caf50;
+  --color-vert-fonce: #1b5e20;
+  --color-vert-sauge: #8bc34a;
+  --color-vert-tendre: #c8e6c9;
+  --color-vert-emeraude: #00695c;
+
   /* Couleurs complémentaires */
-  --color-terre: #8D6E63;
-  --color-terre-clair: #BCAAA4;
-  --color-soleil: #FFC107;
-  --color-ciel: #81C784;
-  
+  --color-terre: #8d6e63;
+  --color-terre-clair: #bcaaa4;
+  --color-soleil: #ffc107;
+  --color-ciel: #81c784;
+
   /* Couleurs neutres */
-  --color-blanc: #FFFFFF;
-  --color-blanc-casse: #FAFAFA;
-  --color-gris-clair: #F5F5F5;
-  --color-gris: #9E9E9E;
+  --color-blanc: #ffffff;
+  --color-blanc-casse: #fafafa;
+  --color-gris-clair: #f5f5f5;
+  --color-gris: #9e9e9e;
   --color-gris-fonce: #424242;
   --color-noir: #212121;
-  
+
   /* Espacements */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -29,11 +29,11 @@
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
   --spacing-xxl: 4rem;
-  
+
   /* Bordures */
   --border-radius: 8px;
   --border-radius-lg: 16px;
-  
+
   /* Ombres */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -48,7 +48,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--color-noir);
   background-color: var(--color-blanc-casse);
@@ -56,7 +56,11 @@ body {
 
 /* Navigation */
 .navbar {
-  background: linear-gradient(135deg, var(--color-vert-principal), var(--color-vert-emeraude));
+  background: linear-gradient(
+    135deg,
+    var(--color-vert-principal),
+    var(--color-vert-emeraude)
+  );
   padding: var(--spacing-sm) 0;
   position: fixed;
   top: 0;
@@ -108,13 +112,18 @@ body {
 }
 
 .nav-link::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -141,7 +150,6 @@ body {
 
 /* Hero sections */
 .hero {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +160,7 @@ body {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -185,7 +193,7 @@ body {
 
 .hero .cta-button {
   display: inline-block;
-  background: linear-gradient(135deg, var(--color-soleil), #FF8F00);
+  background: linear-gradient(135deg, var(--color-soleil), #ff8f00);
   color: var(--color-blanc);
   padding: var(--spacing-sm) var(--spacing-xl);
   text-decoration: none;
@@ -200,7 +208,7 @@ body {
 .hero .cta-button:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
-  background: linear-gradient(135deg, #FF8F00, var(--color-soleil));
+  background: linear-gradient(135deg, #ff8f00, var(--color-soleil));
 }
 
 /* Sections */
@@ -223,14 +231,18 @@ body {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(135deg, var(--color-vert-sauge), var(--color-vert-clair));
+  background: linear-gradient(
+    135deg,
+    var(--color-vert-sauge),
+    var(--color-vert-clair)
+  );
   border-radius: 2px;
 }
 
@@ -282,7 +294,11 @@ body {
 
 /* Citations */
 .citation {
-  background: linear-gradient(135deg, var(--color-vert-tendre), var(--color-ciel));
+  background: linear-gradient(
+    135deg,
+    var(--color-vert-tendre),
+    var(--color-ciel)
+  );
   padding: var(--spacing-xl);
   border-radius: var(--border-radius-lg);
   margin: var(--spacing-xl) 0;
@@ -331,7 +347,11 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-vert-principal), var(--color-vert-clair));
+  background: linear-gradient(
+    135deg,
+    var(--color-vert-principal),
+    var(--color-vert-clair)
+  );
   color: var(--color-blanc);
   box-shadow: var(--shadow-sm);
 }
@@ -339,7 +359,11 @@ body {
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-  background: linear-gradient(135deg, var(--color-vert-clair), var(--color-vert-sauge));
+  background: linear-gradient(
+    135deg,
+    var(--color-vert-clair),
+    var(--color-vert-sauge)
+  );
 }
 
 .btn-secondary {
@@ -356,7 +380,11 @@ body {
 
 /* Footer */
 .footer {
-  background: linear-gradient(135deg, var(--color-vert-fonce), var(--color-vert-principal));
+  background: linear-gradient(
+    135deg,
+    var(--color-vert-fonce),
+    var(--color-vert-principal)
+  );
   color: var(--color-blanc);
   text-align: center;
   padding: var(--spacing-xl) 0;
@@ -365,13 +393,18 @@ body {
 }
 
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-vert-sauge), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-vert-sauge),
+    transparent
+  );
 }
 
 .footer p {
@@ -432,7 +465,7 @@ body {
   .nav-toggle {
     display: block;
   }
-  
+
   .nav-menu {
     position: fixed;
     top: 70px;
@@ -446,28 +479,28 @@ body {
     padding-top: var(--spacing-xl);
     transition: left 0.3s ease;
   }
-  
+
   .nav-menu.active {
     left: 0;
   }
-  
+
   .nav-link {
     padding: var(--spacing-md);
     font-size: 1.2rem;
   }
-  
+
   .hero h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero .subtitle {
     font-size: 1.1rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .grid-2,
   .grid-3 {
     grid-template-columns: 1fr;
@@ -478,17 +511,16 @@ body {
   .hero h1 {
     font-size: 2rem;
   }
-  
+
   .hero .subtitle {
     font-size: 1rem;
   }
-  
+
   .container {
     padding: 0 var(--spacing-sm);
   }
-  
+
   .section {
     padding: var(--spacing-xl) 0;
   }
 }
-

@@ -1,297 +1,511 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nos Activités - Jardiniers de La Bresse</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">Jardiniers de La Bresse</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Accueil</a></li>
-                <li><a href="association.html" class="nav-link">L'Association</a></li>
-                <li><a href="activites.html" class="nav-link active">Nos Activités</a></li>
-                <li><a href="30ans.html" class="nav-link">30 Ans</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
-        </div>
+      <div class="nav-container">
+        <a href="index.html" class="logo">Jardiniers de La Bresse</a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="association.html" class="nav-link">L'Association</a></li>
+          <li>
+            <a href="activites.html" class="nav-link active">Nos Activités</a>
+          </li>
+          <li><a href="30ans.html" class="nav-link">30 Ans</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      </div>
     </nav>
 
     <!-- Section Hero -->
-    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(27, 94, 32, 0.7)), url('images/activites-jardinage.jpg'); background-size: cover; background-position: center;">
-        <div class="hero-content">
-            <h1>Nos Activités</h1>
-            <p class="subtitle">Un programme riche pour tous les passionnés de jardinage</p>
-        </div>
+    <section
+      class="hero"
+      style="
+        height: 95vh;
+        background: url('images/activites-jardinage.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="hero-content">
+        <h1>Nos Activités</h1>
+        <p class="subtitle">
+          Un programme riche pour tous les passionnés de jardinage
+        </p>
+      </div>
     </section>
 
     <!-- Section Échanges et Bourses -->
     <section class="section">
-        <div class="container">
-            <h2 class="section-title">Échanges et Bourses aux Plants</h2>
-            
-            <div class="citation">
-                <p class="citation-text">"Le talent est un jardin et le travail est son jardinier."</p>
-                <p class="citation-author">- Vincent Thomas Rey</p>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Échanges et Bourses aux Plants</h2>
 
-            <div class="grid grid-2">
-                <div>
-                    <h3 style="color: var(--color-vert-principal); font-size: 1.8rem; margin-bottom: var(--spacing-md);">Bourse aux Plants</h3>
-                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--spacing-md);">
-                        <strong>Chacun pourra échanger ou acquérir des plants. Échanges d'expérience, conseils seront une source d'enrichissement réciproque. 
-                        Les plants apportés seront soigneusement identifiés et conditionnés.</strong>
-                    </p>
-                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--spacing-md);">
-                        Nos bourses aux plants sont des moments privilégiés de partage et de découverte. Elles se déroulent plusieurs fois par an, 
-                        au printemps et à l'automne, permettant à chacun de diversifier son jardin avec des variétés locales et adaptées.
-                    </p>
-                    <div class="card">
-                        <h4 style="color: var(--color-vert-principal);">Prochaines dates :</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: var(--spacing-xs);">🌱 <strong>Mars :</strong> Bourse aux plants de légumes</li>
-                            <li style="margin-bottom: var(--spacing-xs);">🌸 <strong>Mai :</strong> Bourse aux plants de fleurs</li>
-                            <li style="margin-bottom: var(--spacing-xs);">🍂 <strong>Septembre :</strong> Bourse aux plants vivaces</li>
-                            <li style="margin-bottom: var(--spacing-xs);">🌰 <strong>Octobre :</strong> Échange de graines</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🔄</div>
-                    <h3>Comment ça marche ?</h3>
-                    <div style="text-align: left;">
-                        <h4 style="color: var(--color-vert-principal); margin-bottom: var(--spacing-sm);">Apporter vos plants :</h4>
-                        <ul style="margin-bottom: var(--spacing-md);">
-                            <li>Étiquetage soigné avec nom et variété</li>
-                            <li>Conditionnement adapté</li>
-                            <li>Fiche descriptive si possible</li>
-                        </ul>
-                        
-                        <h4 style="color: var(--color-vert-principal); margin-bottom: var(--spacing-sm);">Échanger :</h4>
-                        <ul style="margin-bottom: var(--spacing-md);">
-                            <li>Système de troc ou prix symbolique</li>
-                            <li>Conseils de culture inclus</li>
-                            <li>Partage d'expériences</li>
-                        </ul>
-                        
-                        <h4 style="color: var(--color-vert-principal); margin-bottom: var(--spacing-sm);">Découvrir :</h4>
-                        <ul>
-                            <li>Variétés anciennes et locales</li>
-                            <li>Plants rares et originaux</li>
-                            <li>Nouvelles techniques de culture</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="citation">
+          <p class="citation-text">
+            "Le talent est un jardin et le travail est son jardinier."
+          </p>
+          <p class="citation-author">- Vincent Thomas Rey</p>
         </div>
+
+        <div class="grid grid-2">
+          <div>
+            <h3
+              style="
+                color: var(--color-vert-principal);
+                font-size: 1.8rem;
+                margin-bottom: var(--spacing-md);
+              "
+            >
+              Bourse aux Plants
+            </h3>
+            <p
+              style="
+                font-size: 1.1rem;
+                line-height: 1.8;
+                margin-bottom: var(--spacing-md);
+              "
+            >
+              <strong
+                >Chacun pourra échanger ou acquérir des plants. Échanges
+                d'expérience, conseils seront une source d'enrichissement
+                réciproque. Les plants apportés seront soigneusement identifiés
+                et conditionnés.</strong
+              >
+            </p>
+            <p
+              style="
+                font-size: 1.1rem;
+                line-height: 1.8;
+                margin-bottom: var(--spacing-md);
+              "
+            >
+              Nos bourses aux plants sont des moments privilégiés de partage et
+              de découverte. Elles se déroulent plusieurs fois par an, au
+              printemps et à l'automne, permettant à chacun de diversifier son
+              jardin avec des variétés locales et adaptées.
+            </p>
+            <div class="card">
+              <h4 style="color: var(--color-vert-principal)">
+                Prochaines dates :
+              </h4>
+              <ul style="list-style: none; padding: 0">
+                <li style="margin-bottom: var(--spacing-xs)">
+                  🌱 <strong>Mars :</strong> Bourse aux plants de légumes
+                </li>
+                <li style="margin-bottom: var(--spacing-xs)">
+                  🌸 <strong>Mai :</strong> Bourse aux plants de fleurs
+                </li>
+                <li style="margin-bottom: var(--spacing-xs)">
+                  🍂 <strong>Septembre :</strong> Bourse aux plants vivaces
+                </li>
+                <li style="margin-bottom: var(--spacing-xs)">
+                  🌰 <strong>Octobre :</strong> Échange de graines
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔄</div>
+            <h3>Comment ça marche ?</h3>
+            <div style="text-align: left">
+              <h4
+                style="
+                  color: var(--color-vert-principal);
+                  margin-bottom: var(--spacing-sm);
+                "
+              >
+                Apporter vos plants :
+              </h4>
+              <ul style="margin-bottom: var(--spacing-md)">
+                <li>Étiquetage soigné avec nom et variété</li>
+                <li>Conditionnement adapté</li>
+                <li>Fiche descriptive si possible</li>
+              </ul>
+
+              <h4
+                style="
+                  color: var(--color-vert-principal);
+                  margin-bottom: var(--spacing-sm);
+                "
+              >
+                Échanger :
+              </h4>
+              <ul style="margin-bottom: var(--spacing-md)">
+                <li>Système de troc ou prix symbolique</li>
+                <li>Conseils de culture inclus</li>
+                <li>Partage d'expériences</li>
+              </ul>
+
+              <h4
+                style="
+                  color: var(--color-vert-principal);
+                  margin-bottom: var(--spacing-sm);
+                "
+              >
+                Découvrir :
+              </h4>
+              <ul>
+                <li>Variétés anciennes et locales</li>
+                <li>Plants rares et originaux</li>
+                <li>Nouvelles techniques de culture</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Section Formations et Ateliers -->
-    <section class="section" style="background: var(--color-gris-clair);">
-        <div class="container">
-            <h2 class="section-title">Formations et Ateliers</h2>
-            
-            <div class="grid grid-3">
-                <div class="card">
-                    <div class="card-icon">🌱</div>
-                    <h3>Techniques Traditionnelles</h3>
-                    <p>Apprenez les méthodes ancestrales de jardinage : rotation des cultures, associations bénéfiques, préparation du sol.</p>
-                    <ul style="list-style: none; padding: 0; margin-top: var(--spacing-sm);">
-                        <li>• Compostage naturel</li>
-                        <li>• Semis et repiquage</li>
-                        <li>• Taille et greffe</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🔄</div>
-                    <h3>Permaculture</h3>
-                    <p>Découvrez les principes de la permaculture pour créer un jardin productif et respectueux de l'environnement.</p>
-                    <ul style="list-style: none; padding: 0; margin-top: var(--spacing-sm);">
-                        <li>• Design permaculturel</li>
-                        <li>• Buttes de culture</li>
-                        <li>• Gestion de l'eau</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🐛</div>
-                    <h3>Protection Naturelle</h3>
-                    <p>Maîtrisez les techniques de lutte biologique et de prévention naturelle contre les maladies et ravageurs.</p>
-                    <ul style="list-style: none; padding: 0; margin-top: var(--spacing-sm);">
-                        <li>• Auxiliaires du jardin</li>
-                        <li>• Purins et décoctions</li>
-                        <li>• Biodiversité fonctionnelle</li>
-                    </ul>
-                </div>
-            </div>
+    <section class="section" style="background: var(--color-gris-clair)">
+      <div class="container">
+        <h2 class="section-title">Formations et Ateliers</h2>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card-icon">🌱</div>
+            <h3>Techniques Traditionnelles</h3>
+            <p>
+              Apprenez les méthodes ancestrales de jardinage : rotation des
+              cultures, associations bénéfiques, préparation du sol.
+            </p>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin-top: var(--spacing-sm);
+              "
+            >
+              <li>• Compostage naturel</li>
+              <li>• Semis et repiquage</li>
+              <li>• Taille et greffe</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔄</div>
+            <h3>Permaculture</h3>
+            <p>
+              Découvrez les principes de la permaculture pour créer un jardin
+              productif et respectueux de l'environnement.
+            </p>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin-top: var(--spacing-sm);
+              "
+            >
+              <li>• Design permaculturel</li>
+              <li>• Buttes de culture</li>
+              <li>• Gestion de l'eau</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">🐛</div>
+            <h3>Protection Naturelle</h3>
+            <p>
+              Maîtrisez les techniques de lutte biologique et de prévention
+              naturelle contre les maladies et ravageurs.
+            </p>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin-top: var(--spacing-sm);
+              "
+            >
+              <li>• Auxiliaires du jardin</li>
+              <li>• Purins et décoctions</li>
+              <li>• Biodiversité fonctionnelle</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Section Sorties et Visites -->
     <section class="section">
-        <div class="container">
-            <h2 class="section-title">Sorties et Visites</h2>
-            
-            <div class="citation">
-                <p class="citation-text">"Un jardin n'est jamais fini. Il évolue au fil des saisons et des années."</p>
-                <p class="citation-author">- Proverbe de jardinier</p>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Sorties et Visites</h2>
 
-            <div class="grid grid-2">
-                <div class="card">
-                    <div class="card-icon">🏡</div>
-                    <h3>Visites de Jardins</h3>
-                    <p>Découvrez les jardins de nos membres et d'autres passionnés de la région. Chaque visite est l'occasion d'apprendre de nouvelles techniques et de s'inspirer.</p>
-                    <ul style="list-style: none; padding: 0; margin-top: var(--spacing-sm);">
-                        <li>• Jardins privés remarquables</li>
-                        <li>• Fermes en permaculture</li>
-                        <li>• Jardins botaniques</li>
-                        <li>• Pépinières spécialisées</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🌿</div>
-                    <h3>Sorties Nature</h3>
-                    <p>Explorez la flore sauvage de La Bresse et apprenez à reconnaître les plantes utiles au jardin : plantes compagnes, médicinales, comestibles.</p>
-                    <ul style="list-style: none; padding: 0; margin-top: var(--spacing-sm);">
-                        <li>• Reconnaissance botanique</li>
-                        <li>• Cueillette responsable</li>
-                        <li>• Plantes sauvages comestibles</li>
-                        <li>• Herboristerie traditionnelle</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🎓</div>
-                    <h3>Conférences</h3>
-                    <p>Assistez à nos conférences thématiques animées par des experts en jardinage, permaculture, et biodiversité.</p>
-                    <ul style="list-style: none; padding: 0; margin-top: var(--spacing-sm);">
-                        <li>• Changement climatique et jardin</li>
-                        <li>• Variétés anciennes</li>
-                        <li>• Agroécologie</li>
-                        <li>• Jardinage en montagne</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🏆</div>
-                    <h3>Concours d'Embellissement</h3>
-                    <p>Participez à notre concours annuel d'embellissement qui récompense les plus beaux jardins et les initiatives les plus créatives.</p>
-                    <ul style="list-style: none; padding: 0; margin-top: var(--spacing-sm);">
-                        <li>• Catégorie potager</li>
-                        <li>• Catégorie jardin d'ornement</li>
-                        <li>• Prix de l'innovation</li>
-                        <li>• Prix du jardin écologique</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="citation">
+          <p class="citation-text">
+            "Un jardin n'est jamais fini. Il évolue au fil des saisons et des
+            années."
+          </p>
+          <p class="citation-author">- Proverbe de jardinier</p>
         </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="card-icon">🏡</div>
+            <h3>Visites de Jardins</h3>
+            <p>
+              Découvrez les jardins de nos membres et d'autres passionnés de la
+              région. Chaque visite est l'occasion d'apprendre de nouvelles
+              techniques et de s'inspirer.
+            </p>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin-top: var(--spacing-sm);
+              "
+            >
+              <li>• Jardins privés remarquables</li>
+              <li>• Fermes en permaculture</li>
+              <li>• Jardins botaniques</li>
+              <li>• Pépinières spécialisées</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">🌿</div>
+            <h3>Sorties Nature</h3>
+            <p>
+              Explorez la flore sauvage de La Bresse et apprenez à reconnaître
+              les plantes utiles au jardin : plantes compagnes, médicinales,
+              comestibles.
+            </p>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin-top: var(--spacing-sm);
+              "
+            >
+              <li>• Reconnaissance botanique</li>
+              <li>• Cueillette responsable</li>
+              <li>• Plantes sauvages comestibles</li>
+              <li>• Herboristerie traditionnelle</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎓</div>
+            <h3>Conférences</h3>
+            <p>
+              Assistez à nos conférences thématiques animées par des experts en
+              jardinage, permaculture, et biodiversité.
+            </p>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin-top: var(--spacing-sm);
+              "
+            >
+              <li>• Changement climatique et jardin</li>
+              <li>• Variétés anciennes</li>
+              <li>• Agroécologie</li>
+              <li>• Jardinage en montagne</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">🏆</div>
+            <h3>Concours d'Embellissement</h3>
+            <p>
+              Participez à notre concours annuel d'embellissement qui récompense
+              les plus beaux jardins et les initiatives les plus créatives.
+            </p>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin-top: var(--spacing-sm);
+              "
+            >
+              <li>• Catégorie potager</li>
+              <li>• Catégorie jardin d'ornement</li>
+              <li>• Prix de l'innovation</li>
+              <li>• Prix du jardin écologique</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Section Jardins Partagés -->
-    <section class="section" style="background: linear-gradient(135deg, var(--color-vert-tendre), var(--color-ciel));">
-        <div class="container">
-            <h2 class="section-title">Jardins Partagés</h2>
-            
-            <div class="grid grid-2">
-                <div>
-                    <h3 style="color: var(--color-vert-principal); font-size: 1.8rem; margin-bottom: var(--spacing-md);">Cultivons ensemble</h3>
-                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--spacing-md);">
-                        L'association gère plusieurs jardins partagés sur le territoire de La Bresse. Ces espaces collectifs permettent à chacun 
-                        de cultiver ses légumes tout en bénéficiant de l'expérience et de l'entraide du groupe.
-                    </p>
-                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--spacing-md);">
-                        Que vous soyez débutant ou expérimenté, que vous ayez un jardin ou non, nos jardins partagés vous accueillent 
-                        dans un esprit de convivialité et de partage des connaissances.
-                    </p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🌾</div>
-                    <h3>Nos 5 jardins partagés</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: var(--spacing-xs);">🌱 <strong>Jardin du Centre :</strong> 20 parcelles</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🌿 <strong>Jardin des Écoles :</strong> 15 parcelles</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🌸 <strong>Jardin de la Mairie :</strong> 12 parcelles</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🍃 <strong>Jardin des Seniors :</strong> 10 parcelles</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🌺 <strong>Jardin Pédagogique :</strong> Espace collectif</li>
-                    </ul>
-                    <p style="margin-top: var(--spacing-md); font-style: italic;">
-                        Cotisation annuelle : 30€ pour une parcelle de 50m²
-                    </p>
-                </div>
-            </div>
+    <section
+      class="section"
+      style="
+        background: linear-gradient(
+          135deg,
+          var(--color-vert-tendre),
+          var(--color-ciel)
+        );
+      "
+    >
+      <div class="container">
+        <h2 class="section-title">Jardins Partagés</h2>
+
+        <div class="grid grid-2">
+          <div>
+            <h3
+              style="
+                color: var(--color-vert-principal);
+                font-size: 1.8rem;
+                margin-bottom: var(--spacing-md);
+              "
+            >
+              Cultivons ensemble
+            </h3>
+            <p
+              style="
+                font-size: 1.1rem;
+                line-height: 1.8;
+                margin-bottom: var(--spacing-md);
+              "
+            >
+              L'association gère plusieurs jardins partagés sur le territoire de
+              La Bresse. Ces espaces collectifs permettent à chacun de cultiver
+              ses légumes tout en bénéficiant de l'expérience et de l'entraide
+              du groupe.
+            </p>
+            <p
+              style="
+                font-size: 1.1rem;
+                line-height: 1.8;
+                margin-bottom: var(--spacing-md);
+              "
+            >
+              Que vous soyez débutant ou expérimenté, que vous ayez un jardin ou
+              non, nos jardins partagés vous accueillent dans un esprit de
+              convivialité et de partage des connaissances.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🌾</div>
+            <h3>Nos 5 jardins partagés</h3>
+            <ul style="list-style: none; padding: 0">
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌱 <strong>Jardin du Centre :</strong> 20 parcelles
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌿 <strong>Jardin des Écoles :</strong> 15 parcelles
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌸 <strong>Jardin de la Mairie :</strong> 12 parcelles
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🍃 <strong>Jardin des Seniors :</strong> 10 parcelles
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌺 <strong>Jardin Pédagogique :</strong> Espace collectif
+              </li>
+            </ul>
+            <p style="margin-top: var(--spacing-md); font-style: italic">
+              Cotisation annuelle : 30€ pour une parcelle de 50m²
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Section Planning Annuel -->
     <section class="section">
-        <div class="container">
-            <h2 class="section-title">Planning Annuel</h2>
-            
-            <div class="grid grid-2">
-                <div class="card">
-                    <h3 style="color: var(--color-vert-principal);">Printemps</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: var(--spacing-xs);">🌱 <strong>Mars :</strong> Bourse aux plants de légumes</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🌸 <strong>Avril :</strong> Atelier semis et repiquage</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🌿 <strong>Mai :</strong> Bourse aux plants de fleurs</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🌱 <strong>Juin :</strong> Visite de jardins</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 style="color: var(--color-vert-principal);">Été</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: var(--spacing-xs);">☀️ <strong>Juillet :</strong> Sortie nature et cueillette</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🌾 <strong>Août :</strong> Atelier conservation</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🍅 <strong>Septembre :</strong> Concours d'embellissement</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 style="color: var(--color-vert-principal);">Automne</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: var(--spacing-xs);">🍂 <strong>Octobre :</strong> Bourse aux graines</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🌰 <strong>Novembre :</strong> Atelier compostage</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🍄 <strong>Décembre :</strong> Conférence hivernale</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 style="color: var(--color-vert-principal);">Hiver</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: var(--spacing-xs);">❄️ <strong>Janvier :</strong> Planification de l'année</li>
-                        <li style="margin-bottom: var(--spacing-xs);">📚 <strong>Février :</strong> Formation permaculture</li>
-                        <li style="margin-bottom: var(--spacing-xs);">🌱 <strong>Mars :</strong> Préparation des semis</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Planning Annuel</h2>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3 style="color: var(--color-vert-principal)">Printemps</h3>
+            <ul style="list-style: none; padding: 0">
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌱 <strong>Mars :</strong> Bourse aux plants de légumes
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌸 <strong>Avril :</strong> Atelier semis et repiquage
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌿 <strong>Mai :</strong> Bourse aux plants de fleurs
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌱 <strong>Juin :</strong> Visite de jardins
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="color: var(--color-vert-principal)">Été</h3>
+            <ul style="list-style: none; padding: 0">
+              <li style="margin-bottom: var(--spacing-xs)">
+                ☀️ <strong>Juillet :</strong> Sortie nature et cueillette
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌾 <strong>Août :</strong> Atelier conservation
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🍅 <strong>Septembre :</strong> Concours d'embellissement
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="color: var(--color-vert-principal)">Automne</h3>
+            <ul style="list-style: none; padding: 0">
+              <li style="margin-bottom: var(--spacing-xs)">
+                🍂 <strong>Octobre :</strong> Bourse aux graines
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌰 <strong>Novembre :</strong> Atelier compostage
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🍄 <strong>Décembre :</strong> Conférence hivernale
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="color: var(--color-vert-principal)">Hiver</h3>
+            <ul style="list-style: none; padding: 0">
+              <li style="margin-bottom: var(--spacing-xs)">
+                ❄️ <strong>Janvier :</strong> Planification de l'année
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                📚 <strong>Février :</strong> Formation permaculture
+              </li>
+              <li style="margin-bottom: var(--spacing-xs)">
+                🌱 <strong>Mars :</strong> Préparation des semis
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Section Citation finale -->
-    <section class="section" style="background: var(--color-gris-clair);">
-        <div class="container">
-            <div class="citation">
-                <p class="citation-text">"Le jardinage est l'art qui utilise les fleurs et les plantes comme couleurs, et le sol et le ciel comme toile."</p>
-                <p class="citation-author">- Elizabeth Murray</p>
-            </div>
-            <div style="text-align: center; margin-top: var(--spacing-lg);">
-                <a href="contact.html" class="btn btn-primary">Nous rejoindre</a>
-                <a href="30ans.html" class="btn btn-secondary" style="margin-left: var(--spacing-md);">Programme des 30 ans</a>
-            </div>
+    <section class="section" style="background: var(--color-gris-clair)">
+      <div class="container">
+        <div class="citation">
+          <p class="citation-text">
+            "Le jardinage est l'art qui utilise les fleurs et les plantes comme
+            couleurs, et le sol et le ciel comme toile."
+          </p>
+          <p class="citation-author">- Elizabeth Murray</p>
         </div>
+        <div style="text-align: center; margin-top: var(--spacing-lg)">
+          <a href="contact.html" class="btn btn-primary">Nous rejoindre</a>
+          <a
+            href="30ans.html"
+            class="btn btn-secondary"
+            style="margin-left: var(--spacing-md)"
+            >Programme des 30 ans</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Association des Jardiniers de La Bresse</p>
-            <p>30 ans de passion pour le jardinage naturel</p>
-            <p>La Bresse - Vosges - France</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2025 Association des Jardiniers de La Bresse</p>
+        <p>30 ans de passion pour le jardinage naturel</p>
+        <p>La Bresse - Vosges - France</p>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
-
