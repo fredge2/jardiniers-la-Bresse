@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jardiniers de La Bresse</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Jardiniers de La Bresse</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="association.html" class="nav-link">L'Association</a></li>
+                <li><a href="activites.html" class="nav-link">Nos Activités</a></li>
+                <li><a href="30ans.html" class="nav-link">30 Ans</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(27, 94, 32, 0.7)), url('images/contact-jardin.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>Nous Contacter</h1>
+            <p class="subtitle">Rejoignez notre communauté de jardiniers passionnés</p>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Nous Rejoindre</h2>
+            
+            <div class="citation">
+                <p class="citation-text">"Dans un jardin, on ne travaille jamais seul. La terre, les plantes, les saisons sont nos partenaires."</p>
+                <p class="citation-author">- Proverbe de jardinier</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div>
+                    <h3 style="color: var(--color-vert-principal); font-size: 1.8rem; margin-bottom: var(--spacing-md);">Informations Pratiques</h3>
+                    
+                    <div class="card">
+                        <div class="card-icon">📍</div>
+                        <h3>Adresse</h3>
+                        <p>Association des Jardiniers de La Bresse<br>
+                        Maison des Associations<br>
+                        2 Place du Marché<br>
+                        88250 La Bresse</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📞</div>
+                        <h3>Contact</h3>
+                        <p><strong>Téléphone :</strong> 03 29 25 XX XX<br>
+                        <strong>Email :</strong> jardiniers.labresse@gmail.com<br>
+                        <strong>Site web :</strong> www.jardiniers-labresse.fr</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🕒</div>
+                        <h3>Permanences</h3>
+                        <p><strong>Mercredi :</strong> 14h - 17h<br>
+                        <strong>Samedi :</strong> 9h - 12h<br>
+                        <strong>Ou sur rendez-vous</strong></p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--color-vert-principal); font-size: 1.8rem; margin-bottom: var(--spacing-md);">Formulaire de Contact</h3>
+                    
+                    <form class="card" style="padding: var(--spacing-lg);">
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <label for="nom" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; color: var(--color-vert-principal);">Nom *</label>
+                            <input type="text" id="nom" name="nom" required style="width: 100%; padding: var(--spacing-sm); border: 2px solid var(--color-gris-clair); border-radius: var(--border-radius); font-size: 1rem;">
+                        </div>
+                        
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <label for="email" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; color: var(--color-vert-principal);">Email *</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: var(--spacing-sm); border: 2px solid var(--color-gris-clair); border-radius: var(--border-radius); font-size: 1rem;">
+                        </div>
+                        
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <label for="telephone" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; color: var(--color-vert-principal);">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" style="width: 100%; padding: var(--spacing-sm); border: 2px solid var(--color-gris-clair); border-radius: var(--border-radius); font-size: 1rem;">
+                        </div>
+                        
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <label for="sujet" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; color: var(--color-vert-principal);">Sujet</label>
+                            <select id="sujet" name="sujet" style="width: 100%; padding: var(--spacing-sm); border: 2px solid var(--color-gris-clair); border-radius: var(--border-radius); font-size: 1rem;">
+                                <option value="">Choisissez un sujet</option>
+                                <option value="adhesion">Adhésion à l'association</option>
+                                <option value="activites">Informations sur les activités</option>
+                                <option value="jardin-partage">Jardin partagé</option>
+                                <option value="30ans">Événements 30 ans</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <label for="message" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; color: var(--color-vert-principal);">Message *</label>
+                            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: var(--spacing-sm); border: 2px solid var(--color-gris-clair); border-radius: var(--border-radius); font-size: 1rem; resize: vertical;"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Adhésion -->
+    <section class="section" style="background: var(--color-gris-clair);">
+        <div class="container">
+            <h2 class="section-title">Devenir Membre</h2>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">💳</div>
+                    <h3>Cotisation Annuelle</h3>
+                    <p style="font-size: 1.5rem; color: var(--color-vert-principal); font-weight: bold; margin-bottom: var(--spacing-sm);">25€ / an</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>• Accès à toutes les activités</li>
+                        <li>• Bourse aux plants gratuite</li>
+                        <li>• Conseils personnalisés</li>
+                        <li>• Newsletter mensuelle</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Jardin Partagé</h3>
+                    <p style="font-size: 1.5rem; color: var(--color-vert-principal); font-weight: bold; margin-bottom: var(--spacing-sm);">+30€ / an</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>• Parcelle de 50m²</li>
+                        <li>• Outils mis à disposition</li>
+                        <li>• Compost collectif</li>
+                        <li>• Accompagnement débutants</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Tarif Famille</h3>
+                    <p style="font-size: 1.5rem; color: var(--color-vert-principal); font-weight: bold; margin-bottom: var(--spacing-sm);">40€ / an</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>• Jusqu'à 4 personnes</li>
+                        <li>• Activités enfants incluses</li>
+                        <li>• Ateliers famille</li>
+                        <li>• Réductions sorties</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Localisation -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Nous Trouver</h2>
+            
+            <div class="grid grid-2">
+                <div>
+                    <h3 style="color: var(--color-vert-principal); font-size: 1.8rem; margin-bottom: var(--spacing-md);">Au Cœur de La Bresse</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--spacing-md);">
+                        Notre association est située au centre de La Bresse, dans la Maison des Associations, 
+                        facilement accessible en voiture ou à pied depuis le centre-ville.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--spacing-md);">
+                        Nos jardins partagés sont répartis dans différents quartiers de la commune, 
+                        permettant à chacun de trouver un espace proche de son domicile.
+                    </p>
+                    
+                    <div class="card">
+                        <div class="card-icon">🚗</div>
+                        <h3>Accès</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>• <strong>En voiture :</strong> Parking gratuit place du marché</li>
+                            <li>• <strong>En bus :</strong> Ligne régionale, arrêt "Centre-ville"</li>
+                            <li>• <strong>À pied :</strong> Centre-ville accessible</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card" style="background: linear-gradient(135deg, var(--color-vert-tendre), var(--color-ciel)); text-align: center;">
+                    <div class="card-icon">🗺️</div>
+                    <h3>Plan d'Accès</h3>
+                    <p style="margin-bottom: var(--spacing-md);">
+                        La Bresse se situe dans les Vosges, à proximité de Gérardmer et de la Route des Crêtes.
+                    </p>
+                    <div style="background: var(--color-blanc); padding: var(--spacing-md); border-radius: var(--border-radius); margin-bottom: var(--spacing-md);">
+                        <p style="color: var(--color-vert-principal); font-weight: bold;">Distances :</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gris-fonce);">
+                            <li>• Gérardmer : 13 km</li>
+                            <li>• Épinal : 52 km</li>
+                            <li>• Colmar : 45 km</li>
+                            <li>• Nancy : 85 km</li>
+                        </ul>
+                    </div>
+                    <p style="font-style: italic;">
+                        Un cadre montagnard exceptionnel pour pratiquer le jardinage naturel !
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Citation finale -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-vert-tendre), var(--color-ciel));">
+        <div class="container">
+            <div class="citation">
+                <p class="citation-text">"Seul on va plus vite, ensemble on va plus loin. Au jardin comme ailleurs !"</p>
+                <p class="citation-author">- Devise des Jardiniers de La Bresse</p>
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <h3 style="color: var(--color-vert-principal); margin-bottom: var(--spacing-md);">Prêt à nous rejoindre ?</h3>
+                <p style="font-size: 1.1rem; margin-bottom: var(--spacing-lg);">
+                    N'hésitez pas à nous contacter ou à passer nous voir lors de nos permanences. 
+                    Nous serons ravis de vous accueillir et de partager notre passion !
+                </p>
+                <a href="association.html" class="btn btn-primary">En savoir plus sur l'association</a>
+                <a href="activites.html" class="btn btn-secondary" style="margin-left: var(--spacing-md);">Découvrir nos activités</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Association des Jardiniers de La Bresse</p>
+            <p>30 ans de passion pour le jardinage naturel</p>
+            <p>La Bresse - Vosges - France</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardiniers de La Bresse - Accueil</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Jardiniers de La Bresse</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="association.html" class="nav-link">L'Association</a></li>
+                <li><a href="activites.html" class="nav-link">Nos Activités</a></li>
+                <li><a href="30ans.html" class="nav-link">30 Ans</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(46, 125, 50, 0.6), rgba(27, 94, 32, 0.6)), url('images/hero-bresse.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>Jardiniers de La Bresse</h1>
+            <p class="subtitle">30 ans de passion pour le jardinage naturel et la culture de produits sains</p>
+            <a href="association.html" class="cta-button">Découvrir notre association</a>
+        </div>
+    </section>
+
+    <!-- Section Bienvenue -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Bienvenue chez les Jardiniers de La Bresse</h2>
+            
+            <div class="citation">
+                <p class="citation-text">"Pour faire un jardin, il faut un morceau de terre et l'éternité."</p>
+                <p class="citation-author">- Gilles Clément</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Jardinage Naturel</h3>
+                    <p>Nous prônons des pratiques respectueuses de l'environnement, alliant techniques traditionnelles et permaculture pour cultiver des produits sains et naturels.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Échanges et Partage</h3>
+                    <p>Notre association est un lieu d'échanges privilégié où chacun peut partager ses expériences, ses conseils et ses plants dans un esprit de convivialité.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌿</div>
+                    <h3>Savoir-faire Traditionnel</h3>
+                    <p>Nous perpétuons les techniques ancestrales de jardinage tout en nous ouvrant aux innovations de la permaculture et de l'agriculture biologique.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏞️</div>
+                    <h3>Territoire de La Bresse</h3>
+                    <p>Ancrés dans le magnifique territoire de La Bresse, nous valorisons les spécificités locales et les variétés adaptées à notre climat montagnard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 30 ans -->
+    <section class="section" style="background: var(--color-gris-clair);">
+        <div class="container">
+            <h2 class="section-title">30 Ans de Passion</h2>
+            <div class="grid grid-2">
+                <div>
+                    <h3 style="color: var(--color-vert-principal); font-size: 1.5rem; margin-bottom: var(--spacing-md);">Un programme riche et fleuri</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: var(--spacing-md);">
+                        Pour célébrer trois décennies d'existence, l'association des Jardiniers de La Bresse propose un programme riche en événements. 
+                        Projection, bourse aux plants, concours d'embellissement et sorties rythmeront cette année placée sous le signe du partage et de la nature.
+                    </p>
+                    <a href="30ans.html" class="btn btn-primary">Découvrir le programme</a>
+                </div>
+                <div class="citation">
+                    <p class="citation-text">"Le jardinage est l'art qui utilise les fleurs et les plantes comme couleurs, et le sol et le ciel comme toile."</p>
+                    <p class="citation-author">- Elizabeth Murray</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nos Valeurs -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Nos Valeurs</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Respect de l'Environnement</h3>
+                    <p>Nous privilégions les méthodes de culture respectueuses de la biodiversité et de l'écosystème local.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <h3>Solidarité</h3>
+                    <p>L'entraide et le partage de connaissances sont au cœur de notre démarche associative.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>Transmission</h3>
+                    <p>Nous transmettons les savoirs traditionnels aux nouvelles générations tout en nous enrichissant mutuellement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Citation finale -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-vert-tendre), var(--color-ciel));">
+        <div class="container">
+            <div class="citation">
+                <p class="citation-text">"Jardiner, c'est encore ce qu'il y a de plus ressemblant au bonheur sur la terre."</p>
+                <p class="citation-author">- Marguerite Yourcenar</p>
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="contact.html" class="btn btn-primary">Nous rejoindre</a>
+                <a href="activites.html" class="btn btn-secondary" style="margin-left: var(--spacing-md);">Nos activités</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Association des Jardiniers de La Bresse</p>
+            <p>30 ans de passion pour le jardinage naturel</p>
+            <p>La Bresse - Vosges - France</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
